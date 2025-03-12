@@ -366,11 +366,12 @@ def elementalChicken():
 
     elif roundWin == "p2win":
         GoodbyeBad()
+    clicker()
+    Credits()
 
 powerList = [-1, 1, 2, -2, 4, -3, 3]
 cardList = ["fire", "water", "air", "earth", "lightning", "dark", "light"]
 roundWin = ""
-
 
 #p1 deck
 p1card1, p1power1 = drawCard()
@@ -385,6 +386,5 @@ p2card2, p2power2 = drawCard()
 p2card3, p2power3 = drawCard()
 hand2 = (p2card1, p2card2, p2card3)
 totalPower2 = p2power1 + p2power2 + p2power3
-
 
 elementalChicken()
